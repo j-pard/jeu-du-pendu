@@ -1,4 +1,4 @@
-# Jeu du Pendu:
+# Jeu du Pendu [GitHub Page](https://j-pard.github.io/jeu-du-pendu/) :
 
 ## Projet réalisé par [Stéphane Leonard](https://github.com/stephaneleonard) & [Jonathan Pardons](https://github.com/j-pard), BeCode 06-02-2020.  
 L'objectif de cet exercice est d'assurer un travail d'équipe avec des tâches bien définies. Nous avons *jouer le jeu* en se donnant **réellement** une journée pour l'entièreté du projet : réflexion, mock-up, dévelloppement, test et finitions.  
