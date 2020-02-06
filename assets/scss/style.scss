@@ -2,6 +2,102 @@
 @import "_mixins.scss";
 @import "_responsive.scss";
 
+$buttonSize: 60px;
+$minHeight: 550px;
+
 body {
-      
+      width: 80%;
+      height: 100vh;
+      margin: 0 auto;
+
+      section.playing-section {
+            min-height: $minHeight;
+            height: 60%;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            article#draw {
+                  width: 40%;
+                  min-height: $minHeight;
+                  height: 100%;
+                  border: 1px solid yellow;
+            }
+            article#word {
+                  width: 60%;
+                  min-height: $minHeight;
+                  height: 100%;
+                  border: 1px solid orange;
+
+                  display: flex;
+                  flex-direction: row;
+                  flex-wrap: nowrap;
+                  justify-content: center;
+                  align-items: center;
+
+                  div.letters {
+                        text-align: center;
+                        content: " ";
+                        border-bottom: 1px solid black;
+                        width: 50px;
+                        height: 50px;
+                        margin: 0 15px;
+                        font-size: 30px;
+                  }
+            }
+      }
+
+      section.buttons-container {
+            height: 200px;
+            padding-top: 50px;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            div {
+                  width: $buttonSize;
+                  height: $buttonSize;
+                  margin: 15px;
+
+                  background-color: rgba($color: #ccc, $alpha: 0.8);
+                  border: 2px solid black;
+                  border-radius: $buttonSize;
+
+                  font-size: 40px;
+                  font-weight: bold;
+
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  
+                  cursor: pointer;
+
+                  transition: all .3s;
+            }
+
+            div:not(.success):not(.failed):hover {
+                  transform: scale(1.2);
+                  background-color: rgba($color: #fff, $alpha: 0.8);
+                  border: 2px solid red;
+                  color: red;
+            }
+
+            div.success {
+                  background-color: rgba($color: green, $alpha: 0.1);
+                  border: 2px solid green;
+                  color: green;
+                  cursor: not-allowed;
+                  
+            }
+
+            div.failed {
+                  opacity: 0.3;
+                  cursor: not-allowed;
+            }
+
+      }
 }
