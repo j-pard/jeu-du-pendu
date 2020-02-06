@@ -3,13 +3,20 @@
 @import "_responsive.scss";
 
 $buttonSize: 60px;
-$minHeight: 550px;
+$minHeight: 400px;
 
 body {
       width: 80%;
       height: 100vh;
       margin: 0 auto;
 
+      header {
+            h1 {
+                  padding-top: 50px;
+                  text-align: center;
+                  font-size: 40px;
+            }
+      }
       section.playing-section {
             min-height: $minHeight;
             height: 60%;
@@ -23,6 +30,7 @@ body {
                   width: 40%;
                   min-height: $minHeight;
                   height: 100%;
+                  margin-bottom: 50px;
 
                   img {
                         width: 300px;
@@ -30,21 +38,18 @@ body {
 
                         position: absolute;
                         top: 100px;
-                        left: 300px;
+                        left: 100px;
                   }
             }
             article#word {
                   width: 60%;
                   min-height: $minHeight;
                   height: 100%;
-
-                  display: flex;
-                  flex-direction: row;
-                  flex-wrap: nowrap;
-                  justify-content: center;
-                  align-items: center;
+                  text-align: center;
+                  padding: 200px 0 0 0;
 
                   div.letters {
+                        display: inline-block;
                         text-align: center;
                         content: " ";
                         border-bottom: 1px solid black;
@@ -59,6 +64,7 @@ body {
       section.buttons-container {
             height: 200px;
             padding-top: 50px;
+            padding-bottom: 50px;
 
             display: flex;
             flex-direction: row;
@@ -110,5 +116,56 @@ body {
       
       .hidden {
             display: none;
+      }
+
+      @media only screen and (max-width: 1000px) {
+            section.playing-section {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-around;
+                  min-height: 80px;
+                  height: auto;
+      
+                  article#draw {
+                        width: 100%;
+      
+                        img {
+                              width: 400px;
+                              height: auto;
+      
+                              position: absolute;
+                              top: 100px;
+                              left: 50%;
+                              transform: translateX(-50%);
+                        }
+                  }
+                  article#word {
+                        min-height: 80px;
+                        height: max-content;
+                        width: 100%;
+                        text-align: center;
+                        padding: 20px;
+                  }
+            }
+
+            section.buttons-container {
+      
+                  div {
+                        width: $buttonSize + 5;
+                        height: $buttonSize + 5;
+                        margin: 5px;
+                  }
+            }
+      }
+
+      @media only screen and (max-width: 500px) {
+            section.playing-section {
+                  article#draw {
+                        img {
+                              width: 90%;
+                              height: auto;
+                        }
+                  }
+            }
       }
 }
