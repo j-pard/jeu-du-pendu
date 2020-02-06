@@ -118,6 +118,10 @@ body {
             display: none;
       }
 
+      .not-displayed { //only for W3C
+            display: none;
+      }
+
       @media only screen and (max-width: 1000px) {
             section.playing-section {
                   display: flex;
