@@ -81,5 +81,7 @@ body {
     body section.buttons-container div.failed {
       opacity: 0.3;
       cursor: not-allowed; }
+  body .hidden {
+    display: none; }
 
 /*# sourceMappingURL=style.css.map */
