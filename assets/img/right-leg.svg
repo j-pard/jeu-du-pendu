@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="125mm"
-   height="140mm"
-   viewBox="0 0 125 140"
+   width="107.86581mm"
+   height="94.239319mm"
+   viewBox="0 0 107.86581 94.239319"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
@@ -25,11 +25,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="278.06706"
-     inkscape:cy="269.84573"
+     inkscape:zoom="1.4"
+     inkscape:cx="-29.655031"
+     inkscape:cy="246.08448"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer7"
      showgrid="false"
      inkscape:window-width="1850"
      inkscape:window-height="1016"
@@ -53,47 +53,15 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Mat"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-16.272095,-108.08912)" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="head"
-     transform="translate(-16.272095,-108.08912)" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="body"
-     transform="translate(-16.272095,-108.08912)" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer4"
-     inkscape:label="left-arm"
-     transform="translate(-16.272095,-108.08912)" />
-  <g
      inkscape:groupmode="layer"
      id="layer7"
      inkscape:label="right-leg"
-     transform="translate(-16.272095,-108.08912)" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer5"
-     inkscape:label="right-arm"
-     transform="translate(-16.272095,-108.08912)">
-    <rect
-       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999988;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3.5999999;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-       id="rect920-5-2"
-       width="31.805073"
-       height="5.0781207"
-       x="-249.51401"
-       y="93.759575"
-       transform="matrix(-0.78752018,-0.61628886,-0.61628886,0.78752018,0,0)" />
+     style="display:inline"
+     transform="translate(-32.256475,-155.93613)">
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:3.8746562;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 122.08631,232.36606 c 15.46263,9.38319 15.63058,9.48944 15.63058,9.48944"
+       id="path962-7-3-5"
+       inkscape:connector-curvature="0" />
   </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer6"
-     inkscape:label="left-leg"
-     transform="translate(-16.272095,-108.08912)" />
 </svg>
