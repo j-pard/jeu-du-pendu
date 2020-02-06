@@ -23,13 +23,20 @@ body {
                   width: 40%;
                   min-height: $minHeight;
                   height: 100%;
-                  border: 1px solid yellow;
+
+                  img {
+                        width: 300px;
+                        height: auto;
+
+                        position: absolute;
+                        top: 100px;
+                        left: 300px;
+                  }
             }
             article#word {
                   width: 60%;
                   min-height: $minHeight;
                   height: 100%;
-                  border: 1px solid orange;
 
                   display: flex;
                   flex-direction: row;

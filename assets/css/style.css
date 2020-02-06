@@ -23,13 +23,17 @@ body {
     body section.playing-section article#draw {
       width: 40%;
       min-height: 550px;
-      height: 100%;
-      border: 1px solid yellow; }
+      height: 100%; }
+      body section.playing-section article#draw img {
+        width: 300px;
+        height: auto;
+        position: absolute;
+        top: 100px;
+        left: 300px; }
     body section.playing-section article#word {
       width: 60%;
       min-height: 550px;
       height: 100%;
-      border: 1px solid orange;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
