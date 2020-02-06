@@ -1,6 +1,6 @@
 (async () => {
   // needed variables
-  let tries = 0;
+  let tries = 1;
   let word = "Bonjour";
 
   /*
@@ -31,11 +31,11 @@
    */
   const checkIfpartyIsOver = () => {
     if (arrFound.filter(e => e == null).length == 0) {
+      endGame();
       alert(`Well done you found it! Billy is free!`);
+    } else if (tries > 6) {
       endGame();
-    } else if (tries > 5) {
       alert(`Too bad Billy died!`);
-      endGame();
     }
   };
 
@@ -48,6 +48,9 @@
    */
   const endGame = () => {
     //Display right word
+    document.getElementById("word").childNodes.forEach((div, i) => {
+      div.innerText = arrWord[i - 1];
+    });
 
     //block onClick event
     document
@@ -71,18 +74,30 @@
       }
     }
 
+    /*
+     * Update HangedMan svg
+     *
+     * input:  nothing
+     * output: nothing
+     *
+     */
+    const updateSVG = () => {
+      document.getElementById(tries).className = "";
+    };
+
     if (found) {
       document.getElementById(letter).className = "success";
     } else {
       document.getElementById(letter).className = "failed";
+      updateSVG();
       tries++;
     }
 
     // found
     //   ? (document.getElementById(letter).className = "success")
     //   : (document.getElementById(letter).className = "failed");
-    checkIfpartyIsOver();
     displayFound();
+    checkIfpartyIsOver();
   };
 
   /*
