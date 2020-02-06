@@ -16,7 +16,6 @@
     );
     const data = await response.json();
     if (typeof data != "string") {
-      console.log("test");
       word = data[0].toUpperCase();
     } else {
       getWord();
@@ -35,14 +34,20 @@
 
       //timeout to handle confirm delay
       setTimeout(() => {
-        confirm(`Well done you found it! Billy is free!`);
-      }, 10);
+        const again = confirm(`Well done you found it! Billy is free!`);
+        if (again) {
+          window.location.reload();
+        }
+      }, 100);
     } else if (tries > 6) {
       endGame();
       //timeout to handle confirm delay
       setTimeout(() => {
-        confirm(`Too bad Billy died`);
-      }, 10);
+        const again = confirm(`Too bad Billy died`);
+        if (again) {
+          window.location.reload();
+        }
+      }, 100);
     }
   };
 
@@ -122,9 +127,7 @@
 
   await getWord();
   const arrWord = word.split("");
-  console.log(arrWord);
   let arrFound = new Array(arrWord.length).fill(null);
-  console.log(arrFound);
 
   // place empty div for each letters of the word
   arrWord.forEach(e => {
@@ -143,7 +146,6 @@
         if (e.target.className == "failed") {
           console.error("alredy used");
         } else {
-          console.log(e.target.id);
           updateFound(e.target.id);
         }
       });
