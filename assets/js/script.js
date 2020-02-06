@@ -32,10 +32,17 @@
   const checkIfpartyIsOver = () => {
     if (arrFound.filter(e => e == null).length == 0) {
       endGame();
-      alert(`Well done you found it! Billy is free!`);
+
+      //timeout to handle confirm delay
+      setTimeout(() => {
+        confirm(`Well done you found it! Billy is free!`);
+      }, 10);
     } else if (tries > 6) {
       endGame();
-      alert(`Too bad Billy died!`);
+      //timeout to handle confirm delay
+      setTimeout(() => {
+        confirm(`Too bad Billy died`);
+      }, 10);
     }
   };
 
